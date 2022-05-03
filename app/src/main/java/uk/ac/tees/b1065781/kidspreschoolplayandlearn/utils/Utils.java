@@ -15,9 +15,7 @@ import android.widget.RelativeLayout;
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.customclasses.Constant;
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.interfaces.CallbackListener;
 
-/**
- * Created by Naynesh Patel on 07-Mar-19.
- */
+
 public class Utils {
 
     static SharedPreferences sharedPreferences;
