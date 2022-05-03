@@ -14,7 +14,7 @@ import uk.ac.tees.b1065781.kidspreschoolplayandlearn.interfaces.CallbackListener
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.utils.CommonConstantAd;
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.utils.Utils;
 
-public class SplashActivity extends AppCompatActivity implements CallbackListener, AdsCallback {
+public class SplashActivity extends AppCompatActivity implements CallbackListener {
     /*For Internet*/
     @Override
     public void onSuccess() {
@@ -47,15 +47,16 @@ public class SplashActivity extends AppCompatActivity implements CallbackListene
 
     public void callApi() {
         if (Utils.isNetworkConnected(this)) {
-            successCall();
+            //successCall();
+            startNextActivity(1000);
         } else {
             Utils.openInternetDialog(this, true,this);
         }
 
-        handler.postDelayed(myRunnable, 10000);
+       // handler.postDelayed(myRunnable, 10000);
     }
 
-    private void successCall() {
+   /* private void successCall() {
         if (Utils.getPref(this, Constant.SPLASH_SCREEN_COUNT, 1) == 1) {
             Log.e("TAG", "successCall::::IFFFFF " + Utils.getPref(this, Constant.SPLASH_SCREEN_COUNT, 1));
             Utils.setPref(this, Constant.SPLASH_SCREEN_COUNT, 2);
@@ -100,7 +101,7 @@ public class SplashActivity extends AppCompatActivity implements CallbackListene
             Log.e("TAG", "checkAd:ELSE:::: " + Utils.getPref(this, Constant.STATUS_ENABLE_DISABLE, ""));
             startNextActivity(1000);
         }
-    }
+    }*/
 
 
     public void startNextActivity(Integer time) {
@@ -116,31 +117,9 @@ public class SplashActivity extends AppCompatActivity implements CallbackListene
     }
 
 
-    /*For ads*/
-    @Override
-    public void adLoadingFailed() {
-        startNextActivity(0);
-    }
-
-    @Override
-    public void adClose() {
-        startNextActivity(0);
-    }
-
-    @Override
-    public void startNextScreen() {
-        startNextActivity(0);
-    }
-
-    private Boolean isLoaded = false;
-
-    @Override
-    public void onLoaded() {
-        isLoaded = true;
-    }
 
     private Handler handler = new Handler();
-    private Runnable myRunnable = new Runnable() {
+/*    private Runnable myRunnable = new Runnable() {
         @Override
         public void run() {
             if (Utils.isNetworkConnected(SplashActivity.this)) {
@@ -149,18 +128,18 @@ public class SplashActivity extends AppCompatActivity implements CallbackListene
                 }
             }
         }
-    };
+    };*/
 
     @Override
     protected void onStop() {
         super.onStop();
-        handler.removeCallbacks(myRunnable);
+       // handler.removeCallbacks(myRunnable);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        handler.removeCallbacks(myRunnable);
+       // handler.removeCallbacks(myRunnable);
     }
 }
 
