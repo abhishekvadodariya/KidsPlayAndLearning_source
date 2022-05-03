@@ -15,9 +15,7 @@ import java.util.Locale;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
-/**
- * Created by Naynesh Patel on 06-Mar-19.
- */
+
 public class AppControl extends Application {
     Context context;
     public static TextToSpeech textToSpeech;

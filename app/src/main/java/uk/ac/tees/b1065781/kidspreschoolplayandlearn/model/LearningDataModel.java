@@ -1,8 +1,6 @@
 package uk.ac.tees.b1065781.kidspreschoolplayandlearn.model;
 
-/**
- * Created by Naynesh Patel on 06-Feb-19.
- */
+
 public class LearningDataModel {
     public int image;
     public String showTitle;

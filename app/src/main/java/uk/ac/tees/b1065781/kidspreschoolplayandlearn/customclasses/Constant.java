@@ -2,9 +2,6 @@ package uk.ac.tees.b1065781.kidspreschoolplayandlearn.customclasses;
 
 import org.jetbrains.annotations.Nullable;
 
-/**
- * Created by Naynesh Patel on 12-Feb-19.
- */
 public class Constant {
     public static String DB_PATH = "data/data/uk.ac.tees.b1065781.kidspreschoolplayandlearn/databases/";
     public static String DATABASE_NAME = "preschool.db";

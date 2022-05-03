@@ -9,9 +9,6 @@ import android.widget.Scroller;
 
 import java.lang.reflect.Field;
 
-/**
- * Created by Naynesh Patel on 3/24/2018.
- */
 
 public class NonSwipeAbleViewPager extends ViewPager {
 

@@ -20,9 +20,7 @@ import uk.ac.tees.b1065781.kidspreschoolplayandlearn.model.LearningDataModel;
 
 import java.util.ArrayList;
 
-/**
- * Created by Naynesh Patel on 06-Feb-19.
- */
+
 public class SubHomeAdapter extends RecyclerView.Adapter<SubHomeAdapter.ViewHolder> {
 
     Context context;

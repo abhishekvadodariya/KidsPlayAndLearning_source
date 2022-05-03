@@ -18,9 +18,6 @@ import uk.ac.tees.b1065781.kidspreschoolplayandlearn.model.LearningDataModel;
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.utils.Utils;
 
 import java.util.ArrayList;
-
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
-
 public class SubActivity extends AppCompatActivity {
 
     Context context;

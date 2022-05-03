@@ -9,9 +9,6 @@ import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
 
-/**
- * Created by Naynesh Patel on 12-Feb-19.
- */
 class DatabaseHelper(internal var context: Context) : SQLiteOpenHelper(context, Constant.DATABASE_NAME, null, Constant.DATABASE_VERSION) {
 
     val videoDetails: ArrayList<ModelVideo>

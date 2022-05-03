@@ -24,9 +24,7 @@ import uk.ac.tees.b1065781.kidspreschoolplayandlearn.utils.Utils;
 
 import java.util.ArrayList;
 
-/**
- * Created by Naynesh Patel on 06-Feb-19.
- */
+
 public class ListenGuessAdapter extends RecyclerView.Adapter<ListenGuessAdapter.ViewHolder> {
 
 

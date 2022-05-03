@@ -18,9 +18,7 @@ import uk.ac.tees.b1065781.kidspreschoolplayandlearn.activity.exam.ListenGuessAc
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.activity.exam.LookChooseActivity;
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.activity.SubActivity;
 
-/**
- * Created by Naynesh Patel on 06-Feb-19.
- */
+
 public class HomeCategoriesAdapter extends RecyclerView.Adapter<HomeCategoriesAdapter.ViewHolder> {
 
     class ViewHolder extends RecyclerView.ViewHolder {

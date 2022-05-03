@@ -21,9 +21,6 @@ import uk.ac.tees.b1065781.kidspreschoolplayandlearn.model.ModelVideo;
 
 import java.util.ArrayList;
 
-/**
- * Created by Naynesh Patel on 12-Feb-19.
- */
 public class VideoListAdapter extends RecyclerView.Adapter<VideoListAdapter.ViewHolder> {
 
     Context context;

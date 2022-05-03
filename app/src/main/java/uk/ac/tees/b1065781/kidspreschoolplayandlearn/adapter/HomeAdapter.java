@@ -17,9 +17,7 @@ import uk.ac.tees.b1065781.kidspreschoolplayandlearn.R;
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.activity.HomeActivity;
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.activity.video.VideoLearningActivity;
 
-/**
- * Created by Naynesh Patel on 06-Feb-19.
- */
+
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
     Context context;

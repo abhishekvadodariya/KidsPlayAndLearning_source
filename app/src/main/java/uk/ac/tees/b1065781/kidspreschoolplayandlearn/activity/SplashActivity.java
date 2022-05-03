@@ -8,14 +8,11 @@ import android.os.Bundle;
 import android.util.Log;
 
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.R;
-import uk.ac.tees.b1065781.kidspreschoolplayandlearn.customclasses.Constant;
-import uk.ac.tees.b1065781.kidspreschoolplayandlearn.interfaces.AdsCallback;
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.interfaces.CallbackListener;
-import uk.ac.tees.b1065781.kidspreschoolplayandlearn.utils.CommonConstantAd;
 import uk.ac.tees.b1065781.kidspreschoolplayandlearn.utils.Utils;
 
 public class SplashActivity extends AppCompatActivity implements CallbackListener {
-    /*For Internet*/
+
     @Override
     public void onSuccess() {
 
